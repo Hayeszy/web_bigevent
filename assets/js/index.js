@@ -39,7 +39,11 @@ $("#btnLogout").click(() => {
         // 2、跳转到登录页面
         location.href = "/login.html";
     });
-})
+});
+
+function change() {
+    $("#change").addClass("layui-this").next().removeClass();
+}
 
 // 获取用户列表
 getUserInfo();
